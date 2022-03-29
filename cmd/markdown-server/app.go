@@ -17,6 +17,6 @@ func main() {
 	r.HandleFunc("/{page}", handlers.Pages)
 	http.Handle("/", r)
 
-	log.Println("Listing for requests at http://localhost:8000/")
-	log.Fatal(http.ListenAndServe("localhost:8000", nil))
+	log.Println("Listing for requests at http://0.0.0.0:8000/")
+	log.Fatal(http.ListenAndServe("0.0.0.0:8000", nil))
 }
