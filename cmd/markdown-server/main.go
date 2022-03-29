@@ -10,6 +10,8 @@ import (
 )
 
 func main() {
+	log.Println("Starting up server")
+
 	r := mux.NewRouter()
 	r.HandleFunc("/", handlers.Index)
 	r.HandleFunc("/{page}", handlers.Pages)
